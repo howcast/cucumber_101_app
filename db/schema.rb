@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(:version => 20090712060001) do
     t.string   "line1"
     t.string   "line2"
     t.string   "line3"
-    t.integer  "composer_id"
     t.datetime "created_at"
   end
 

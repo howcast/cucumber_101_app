@@ -5,7 +5,6 @@ class CreateTables < ActiveRecord::Migration
       t.column "line1",       :string
       t.column "line2",       :string
       t.column "line3",       :string
-      t.column "composer_id", :integer
       t.column "created_at",  :datetime
     end
   end
