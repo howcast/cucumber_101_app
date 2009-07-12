@@ -12,7 +12,6 @@
 ActiveRecord::Schema.define(:version => 20090712060001) do
 
   create_table "haikus", :force => true do |t|
-    t.integer  "haiku_id"
     t.string   "line1"
     t.string   "line2"
     t.string   "line3"
