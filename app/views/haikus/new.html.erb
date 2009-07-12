@@ -1,0 +1,8 @@
+<% form_for :haiku, :url => haikus_path do |f| %>
+  <%= f.error_messages %>
+  <p>Enter your poem here</p>
+  <%= f.text_field :line1 %><br />
+  <%= f.text_field :line2 %><br />
+  <%= f.text_field :line3 %><br /><br />
+  <%= submit_tag "Submit" %>
+<% end -%>
