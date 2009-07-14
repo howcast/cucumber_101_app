@@ -9,10 +9,6 @@ module NavigationHelpers
     case page_name
     when /the homepage/
       '/'
-    when /new haiku page/
-      new_haiku_path
-    when /haikus page/
-      haikus_path
     # Add more mappings here.
     # Here is a more fancy example:
     #
