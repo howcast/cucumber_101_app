@@ -1,0 +1,18 @@
+/*div {border:1px dashed red;}*/
+
+body {font:15pt Georgia; margin:0; background-color:#357; color:#eee;}
+img {border: 1px solid #222; padding:0px; margin:0 20px 20px 20px;}
+h1 {font-size:150%;text-align:center;}
+p {margin:20px;}
+hr {width:50%;}
+
+.centered {right:0; margin:0 auto; width:1000px;}
+.right {float:right;}
+.left {float:left;}
+.clear {clear:both;}
+
+/*layout*/
+#header {height:70px;}
+#content {background-color:#eee; color:#000;}
+#content_container {background:url("../images/background.gif") no-repeat; padding:20px 0 0 20px;}
+#footer {height:50px;}

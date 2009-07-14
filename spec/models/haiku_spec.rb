@@ -1,22 +1,5 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
-describe Haiku, "number_of_lines validation" do    
-  before do 
-    @haiku = Haiku.new
-  end
-  
-  it "should raise an error if there are less than 3 lines" do
-    lambda { @haiku.save! }.should raise_error(ActiveRecord::RecordInvalid)
-  end
-  
-  it "should not raise an error if there are 3 lines" do
-    @haiku.line1 = "one two three"
-    @haiku.line2 = "four five six seven"
-    @haiku.line3 = "eight nine ten"
-    lambda { @haiku.save! }.should_not raise_error
-  end
-end
-
 describe Haiku, "number_of_syllables validation" do    
   before do 
     @haiku = Haiku.new
@@ -42,24 +25,6 @@ describe Haiku, "number_of_syllables validation" do
   
   it "should not raise an error if we have an 11 syllable (3-5-3) haiku" do
     lambda { @haiku.save! }.should_not raise_error
-  end
-end
-
-describe Haiku, "three_lines?" do    
-  before do 
-    @haiku = Haiku.new
-    @haiku.line1 = "one two three"
-    @haiku.line2 = "four five six seven"
-    @haiku.line3 = "eight nine ten"
-  end
-  
-  it "should return true if there are 3 lines" do
-    @haiku.three_lines?.should be_true
-  end
-  
-  it "should return false if there are not 3 lines" do
-    @haiku.line3 = nil
-    @haiku.three_lines?.should be_false
   end
 end
 

@@ -1,8 +1,9 @@
-<% @haikus.each do |haiku| %>
-  <p>
-    <%= haiku.line1 %><br />
-    <%= haiku.line2 %><br />
-    <%= haiku.line3 %>
-  </p>
-  <hr />
+<% @haikus.each_with_index do |haiku, i| %>
+  <div>
+    <p><%= haiku.line1 %></p>
+    <p><%= haiku.line2 %></p>
+    <p><%= haiku.line3 %></p>
+    <hr/>
+  </div>
 <% end %>
+<p><%= link_to 'New', new_haiku_path %></p>
